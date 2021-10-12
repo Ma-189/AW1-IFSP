@@ -10,7 +10,7 @@
 <link rel="icon" href="Brooklyn_Nine-Nine_Logo.ico" size="14x14" >
 
 <!--STYLES--> 
-<link rel = "stylesheet" href="style.css">
+<link rel = "stylesheet" href="páginas.css">
 
 <!--FONTS--> 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,13 +31,36 @@
     </header> 
 
     <main>
-        <p>MyString é uma plataforma de ferramentas online, totalmente gratuita com funções String para ajudar você programador(a)!</p> 
-        <img src= "./assets/logopi.png">
-    </main>
+        <h3 class="title"> Contador de caracteres, palavras e espaços </h3>
+        <label class="sr-only" for="description"></label>
+        <input type="text" id="description" name="description" placeholder="">
+
+        <div class="container">
+        <div class="card">
+                <h2>
+                    <span>Caracteres: <p id = "cDisplay"> 0</p></span>
+                </h2>
+        </div>
+
+        <div class="card">
+            <h2>
+                <span>Palavras: <p id = "pDisplay"> 0</p></span>
+            </h2>
+        </div>
+
+        <div class="card">
+        <h2>
+            <span>Espaços: <p id = "eDisplay">0</p> </span>
+        </h2>
+       
+    </div>
+</div>
+</main>
 
     <footer>
         <span>Marcela Stade Carvalho &copy;</span>
     </footer>
+
 </body>
     <script src="./main.js"></script>
 </html>

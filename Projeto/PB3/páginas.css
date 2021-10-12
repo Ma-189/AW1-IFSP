@@ -1,0 +1,158 @@
+/* RESET */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --medium-pink: rgba(224, 110, 137, 1);
+    --light-pink: #FF96AF;
+    --pink: #940224;
+    --mint-green: rgba(222, 240, 225, 1);
+    --off-white:  rgba(240, 238, 238, 1);   
+    --text-color: rgba(44, 36, 38, 1);
+}
+
+body {
+    background: var(--mint-green);
+}
+
+header{
+    background-color: var(--medium-pink);
+    display: block;
+    width: 100vw;
+    height: 50vh;
+    text-align: center;
+}
+
+a{
+    font-family: Poppins;
+    text-align: left;
+    padding: 1.5rem 2rem;
+    font-size: 1.5rem;
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    color: #940224;
+}
+
+a:hover{
+    background-color: var(--mint-green);
+    transition: 0.5s;
+}
+
+ul {
+    top: 4rem;
+    list-style: none;
+}
+
+label img{
+    position: absolute;
+    display: block;
+    align-items: center;
+
+    padding-top: 0.5rem;
+    margin-left: 1.5rem;
+    width: 2rem;
+
+    color: var(--mint-green);
+
+    z-index: 1;
+}
+
+.logo{
+    font-family: Poppins;
+    text-align: right;
+    font-style: normal;
+    font-size: 2rem;
+    font-weight: normal;
+    margin-right: 2rem;
+    padding-top: 0.5rem;
+    color: var(--medium-pink);
+}
+
+#nav{
+    background-color: var(--medium-pink);
+    position: absolute;
+    width: 21rem;
+    left: -21rem;
+    height: 100vh;
+    text-align: left;
+    z-index: 1;
+}
+
+main  {
+    margin-top: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex-direction: column;
+}
+
+input {
+    width: 60vw;
+    height: 50vh;
+    border-radius: 2rem; 
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--off-white);
+}
+
+h3 {
+    padding: 2rem;
+    font-family: Poppins;
+    font-style: normal;
+    margin-left: auto;
+    margin-top: -55rem;
+    text-align: center;
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.container {
+    width: min(90vw, 800px);
+    margin: auto;
+    display: grid;
+    margin-top: 5rem;
+    bottom: 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--medium-pink);
+    border-radius: 1rem;
+}
+
+h2 {
+    
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+    color: white;
+}
+
+span {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+}
+
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--medium-pink);
+}
