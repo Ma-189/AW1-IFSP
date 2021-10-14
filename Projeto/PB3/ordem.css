@@ -116,20 +116,25 @@ h3 {
     color: white;
 }
 
-.container {
-    width: min(90vw, 800px);
-    display: grid;
-    margin-top: 5rem;
-    bottom: 0;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
+button.card p {
+    display: flex;
+    font-family: Poppins;
+    font-style: normal;
+    color: white;
 }
 
-.card {
+button.card {
     width: min(90vw, 800px);
     background-color: var(--medium-pink);
     border-radius: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
+
 
 h2 {
     
