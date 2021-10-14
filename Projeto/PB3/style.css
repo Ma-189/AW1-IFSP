@@ -87,19 +87,53 @@ p {
     font-weight: 500;
     text-align: justify;
     padding: 2rem 7rem;
-    font-size: 2rem;
-    display: flex;
+    font-size: 1.8rem;
     text-decoration: none;
     color: var(--text-color);
 }
 
+.p1 {
+    font-family: Dosis;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--pink);
+    font-size: 4rem;
+}
+
+.p2 {
+    font-family: Dosis;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--pink);
+    margin-top: -3rem;
+    font-size: 4rem;
+}
+
+.p3 {
+    font-family: Dosis;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--medium-pink);
+    margin-top: -2.5rem;
+    font-size: 1.5rem;
+}
+
+.logo2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 main {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     flex-wrap: nowrap;
+
 }
 
 span {
@@ -109,6 +143,9 @@ span {
 }
 
 footer {
+    width: 100vw;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--medium-pink);
 }
