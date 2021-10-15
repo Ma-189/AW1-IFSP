@@ -39,7 +39,7 @@ header{
     color: #940224;
 }
 
-.ah:hover{
+.ah:hover {
     background-color: var(--mint-green);
     transition: 0.5s;
 }
@@ -49,7 +49,7 @@ ul {
     list-style: none;
 }
 
-label img{
+label img {
     position: absolute;
     display: block;
     align-items: center;
