@@ -22,6 +22,7 @@
         <h1 class="logo"> MY ANIME LIST </h1>
         <nav id = "nav">
             <ul> 
+                <li><a class ="ah" href="index.html">Início</a></li>
                 <li><a class ="ah" href="contador.html">Contador de Caracteres</a></li>
                 <li><a class ="ah" href="letras.html">Maiúsculas e minúsculas</a></li>
                 <li><a class ="ah" href="ordem.html">Ordem Alfabética</a></li>
@@ -29,30 +30,31 @@
             </ul>
         </nav>
     </header> 
+    
 
     <main>
         <h3 class="title"> Contador de caracteres, palavras e espaços </h3>
-        <label class="sr-only" for="description"></label>
-        <input type="text" id="description" name="description" placeholder="">
-
-        <div class="container">
-        <div class="card">
-                <p>
-                    <span>Caracteres: <p id = "cDisplay"> 0</p></span>
-                </p>
+        <div class="result">
+        <form name="form_main">
+            <fildset>
+            <textarea name="cont" id="cont" placeholder=" Digite ou cole seu texto:" oninput="countText()"></textarea>
+        
+    <div class="container"> 
+        <div class="label">
+            <label id="l2" for="cDisplay">Caracteres: <span id="cDisplay">0</span></label>
         </div>
-
-        <div class="card">
-            <p>
-                <span>Palavras: <p id = "pDisplay"> 0</p></span>
-            </p>
+        <div class="label">
+            <label id="l2" for="pDisplay">Palavras: <span id="pDisplay">0</span></label>
         </div>
-
-        <div class="card">
-        <p>
-            <span>Espaços: <p id = "eDisplay">0</p> </span>
-        </p>
-    </div>
+        <div class="label" >
+            <label id="l2" for="eDisplay">Espaços: <span id="eDisplay">0</span></label>
+        </div>
+        <div class="label">
+            <label id="l2" for="lDisplay">Linhas: <span id="lDisplay">0</span></label>
+        </div>
+        </fildset>
+        </div>
+</form>
 </div>
 </main>
 

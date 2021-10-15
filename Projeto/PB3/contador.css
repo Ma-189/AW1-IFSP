@@ -45,7 +45,7 @@ header{
 }
 
 ul {
-    top: 4rem;
+    margin-top: 2.3rem;
     list-style: none;
 }
 
@@ -94,10 +94,10 @@ main  {
     flex-direction: column;
 }
 
-input {
+#cont {
     width: 60vw;
     height: 50vh;
-    border-radius: 1rem; 
+    border-radius: 0.5rem; 
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: var(--off-white);
@@ -118,26 +118,32 @@ h3 {
 
 .container {
     width: min(90vw, 800px);
+    margin: auto;
     display: grid;
-    margin-top: 5rem;
-    bottom: 0;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
-}
-
-.card {
-    background-color: var(--medium-pink);
-    border-radius: 1rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-p {
-    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    align-content: center;
     justify-content: center;
-    align-content: space-around;
-    flex-wrap: nowrap;
+    align-items: center;
+    justify-items: center;
+}
+
+.label {
+    display: flex;
+    width: min(90vw, 200px);
+    margin-top: 5rem;
+    border-radius: 1rem;
+    bottom: 0;
+    gap: 2rem;
+    background-color: var(--medium-pink);
     flex-direction: row;
-    align-items: flex-start;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.result {
     color: white;
 }
 
