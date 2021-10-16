@@ -33,14 +33,14 @@
 
     <main>
         <h3 class="title"> Maiúsculas e Minúsculas </h3>
-        <label class="sr-only" for="description"></label>
-        <input type="text" id="description" name="description" placeholder="">
+        <textarea name="texto" id="texto" placeholder=" Digite ou cole seu texto:"></textarea>
         <div class="container">
-        <button class="card"><p>MAIÚSCULAS</p></button> 
-        <button class="card"><p>minúsculas</p></button> 
-        <button class="card"><p>AlTeRnAdO</p></button> 
-        <button class="card"><p>Primeira Letra Da Palavra</p></button> 
-        <button class="card"><p>Primeira letra da frase</p></button> 
+        <input type ="button" onclick="maiuscula()" value="MAIÚSCULAS"> 
+        <input type ="button" onclick="minuscula()" value="minúsculas"> 
+        <input type ="button" onclick="alternado()" value="AlTeRnAdO"> 
+        <input type ="button" onclick="primeiraLetrap()" value="Primeira Letra Da Palavra">
+        <input type ="button" onclick="primeiraLetraf()" value="Primeira letra da frase">
+   <p id="resultado"></p>     
         </div>
 </main>
 
