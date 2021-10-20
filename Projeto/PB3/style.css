@@ -17,6 +17,7 @@
 
 body {
     background: var(--mint-green);
+    overflow-x: hidden;
 }
 
 header{
@@ -60,6 +61,7 @@ label img{
     color: var(--mint-green);
 
     z-index: 1;
+    cursor: pointer;
 }
 
 #icon {

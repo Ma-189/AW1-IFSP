@@ -18,6 +18,7 @@
 
 body {
     background: var(--mint-green);
+    overflow-x: hidden;
 }
 
 header{
@@ -94,10 +95,10 @@ main  {
     flex-direction: column;
 }
 
-input {
+textarea {
     width: 60vw;
     height: 50vh;
-    border-radius: 1rem; 
+    border-radius: 0.7rem; 
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: var(--off-white);
@@ -136,6 +137,7 @@ p {
     align-items: center;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 
 span {
@@ -167,4 +169,11 @@ span {
 footer {
     width: 100vw;
     background-color: var(--medium-pink);
+}
+
+@media only screen and (max-width: 600px) {
+    textarea {
+        width: 75vw;
+        height: 40vh;
+    }    
 }

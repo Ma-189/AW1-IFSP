@@ -37,6 +37,26 @@ function primeiraLetrap() {
 }
 
 function primeiraLetraf() {
-    result.innerText = t.value.toLowerCase().charAt(0).toUpperCase() + t.value.slice(1);
+    result.innerText = t.value.toLowerCase().replace(/(?:^)\S/g, function(a) {
+        return a.toUpperCase();
+    });
+
+    return result;
 }
-    
+
+function alternado() {
+
+}
+
+function inverter() {
+    result.innerText = t.value.split('').reverse().join('');
+}
+
+function ordenar() {
+    result.innerText = t.value.sort();
+
+    for(i=0; t.length; i++) {
+        document.write(t[i] + "<br/>");
+    }
+}
+
