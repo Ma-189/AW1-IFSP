@@ -171,7 +171,7 @@ footer {
     background-color: var(--medium-pink);
 }
 
-@media only screen and (min-width: 0px) and (max-width: 620px) {
+@media only screen and (min-width: 424px) and (max-width: 620px) {
     textarea {
         width: 75vw;
         height: 40vh;
