@@ -140,6 +140,7 @@ input {
     flex-direction: row;
     align-items: flex-start;
     color: white;
+    cursor: pointer;
 }
 
 span {

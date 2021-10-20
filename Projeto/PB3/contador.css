@@ -120,7 +120,7 @@ h3 {
     width: min(90vw, 800px);
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     align-content: center;
     justify-content: center;
@@ -146,6 +146,11 @@ h3 {
 .result {
     color: white;
 }
+
+.result form {
+    display: flex;
+}
+
 
 span {
     font-family: Poppins;
