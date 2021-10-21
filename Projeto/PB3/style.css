@@ -183,7 +183,7 @@ footer {
     main {
         flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     }
 
     .logo2{
@@ -210,5 +210,6 @@ footer {
 
     .prin {
         font-size: 1.5rem;
+        text-align: center;
     }
 }
