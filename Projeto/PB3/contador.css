@@ -122,17 +122,17 @@ h3 {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 4rem;
     align-content: center;
     justify-content: center;
     align-items: center;
     justify-items: center;
+    padding: 3rem 0 3rem 0rem;
 }
 
 .label {
     display: flex;
     width: min(90vw, 200px);
-    margin-top: 5rem;
     border-radius: 1rem;
     bottom: 0;
     gap: 2rem;
@@ -144,14 +144,15 @@ h3 {
     align-items: center;
 }
 
-.result {
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     color: white;
 }
-
-.result form {
-    display: flex;
-}
-
 
 span {
     font-family: Poppins;
@@ -182,4 +183,15 @@ span {
 footer {
     width: 100vw;
     background-color: var(--medium-pink);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+    textarea {
+        width: 75vw;
+        height: 40vh;
+    }    
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
