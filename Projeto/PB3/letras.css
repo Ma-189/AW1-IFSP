@@ -173,3 +173,14 @@ footer {
     width: 100vw;
     background-color: var(--medium-pink);
 }
+
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+    textarea {
+        width: 75vw;
+        height: 40vh;
+    }    
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
