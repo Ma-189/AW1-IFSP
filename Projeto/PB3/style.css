@@ -179,7 +179,7 @@ footer {
     background-color: var(--medium-pink);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
     main {
         flex-direction: column;
     flex-wrap: nowrap;
@@ -211,5 +211,38 @@ footer {
     .prin {
         font-size: 1.1rem;
         text-align: center;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    main {
+        flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    }
+
+    .logo2{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .p1 {
+        font-size: 4rem;
+    }
+
+    .p2 {
+        font-size: 4rem;
+    }
+
+    .p3 {
+        font-size: 1.5rem;
+    }
+
+    .prin {
+        font-size: 1.5rem;  
     }
 }
