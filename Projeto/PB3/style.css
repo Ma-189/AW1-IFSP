@@ -86,6 +86,7 @@ label img{
     left: -21rem;
     height: 100vh;
     text-align: left;
+    transition: 0.5s;
 }
 
 .p1 {

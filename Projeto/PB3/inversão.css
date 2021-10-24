@@ -84,6 +84,7 @@ label img {
     height: 100vh;
     text-align: left;
     z-index: 1;
+    transition: 0.5s;
 }
 
 main  {
@@ -97,6 +98,7 @@ main  {
 }
 
 textarea {
+    padding: 0.5rem;
     width: 60vw;
     height: 50vh;
     border-radius: 0.7rem; 

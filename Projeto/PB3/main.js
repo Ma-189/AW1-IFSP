@@ -18,18 +18,17 @@ function countText() {
 }
 
 const t = document.getElementById('texto')
-const result = document.getElementById('resultado')
 
 function maiuscula() {
-    result.innerText = t.value.toUpperCase()
+    t.value = t.value.toUpperCase()
 }
 
 function minuscula() {
-    result.innerText = t.value.toLowerCase()
+    t.value = t.value.toLowerCase()
 }
 
 function primeiraLetrap() {
-    result.innerText = t.value.toLowerCase().replace(/(?:^|\s)\S/g, function(a) {
+    t.value = t.value.toLowerCase().replace(/(?:^|\s)\S/g, function(a) {
         return a.toUpperCase();
     });
 
@@ -37,26 +36,25 @@ function primeiraLetrap() {
 }
 
 function primeiraLetraf() {
-    result.innerText = t.value.toLowerCase().replace(/(?:^)\S/g, function(a) {
+    t.value = t.value.toLowerCase().replace(/(?:^|\.|\.\s)\S/g, function(a) {
         return a.toUpperCase();
     });
-
-    return result;
 }
 
 function alternado() {
-
+    t.value = t.value.split("").map((letra,i) =>(i%2)==0 ?
+    letra.toUpperCase() : letra.toLowerCase())
+    .join("");
 }
 
 function inverter() {
-    result.innerText = t.value.split('').reverse().join('');
+    t.value = t.value.split('').reverse().join('');
 }
 
 function ordenar() {
-    result.innerText = t.value.sort();
+    var array = t.value.split(' ');
+    array.sort();
 
-    for(i=0; t.length; i++) {
-        document.write(t[i] + "<br/>");
-    }
+    t.value = array.join(' ')
 }
 
