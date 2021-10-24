@@ -31,8 +31,6 @@ function primeiraLetrap() {
     t.value = t.value.toLowerCase().replace(/(?:^|\s)\S/g, function(a) {
         return a.toUpperCase();
     });
-
-    return result;
 }
 
 function primeiraLetraf() {
