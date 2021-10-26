@@ -221,7 +221,7 @@ footer {
     }    
     
     .tooltip .tooltiptext {
-        bottom: 10rem;
+        bottom: 17rem;
         font-size: 0.6rem;
         left: 2rem;
     }
@@ -234,7 +234,7 @@ footer {
     }    
     
     .tooltip .tooltiptext {
-        bottom: 15rem;
+        bottom: 17rem;
         font-size: 0.7rem;
         left: 2rem;
     }
@@ -242,11 +242,14 @@ footer {
 
 @media only screen and (min-width: 621px) and (max-width: 1200px) {
     .tooltip .tooltiptext {
-        bottom: 18rem;
+        bottom: 20rem;
         font-size: 0.7rem;
         left: 0.5rem;
     }
 }
 
-@media only screen and (min-width: 120px) and (max-width: 1201px) {
+@media only screen and (min-width: 1290px) and (max-width: 1500px) {
+    .tooltip .tooltiptext {
+        bottom: 21rem;
+    }
 }
