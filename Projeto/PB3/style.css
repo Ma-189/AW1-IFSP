@@ -84,7 +84,7 @@ label img{
     position: absolute;
     width: 21rem;
     left: -21rem;
-    height: 100vh;
+    height: 80vh;
     text-align: left;
     transition: 0.5s;
 }
@@ -136,17 +136,15 @@ label img{
     color: var(--text-color);
 }
 
-
 main {
     margin: 5rem;
-    height: 100vh;
+    height: 47vh;
     display: flex;
     align-content: center;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
-
 }
 
 span {
