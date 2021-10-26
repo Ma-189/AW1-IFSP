@@ -18,6 +18,7 @@
 body {
     background: var(--mint-green);
     overflow-x: hidden;
+    height: 100vh;
 }
 
 header{
@@ -176,6 +177,8 @@ span {
 footer {
     width: 100vw;
     background-color: var(--medium-pink);
+    position: absolute;
+    bottom: 0;
 }
 
 @media only screen and (max-width: 600px) {
