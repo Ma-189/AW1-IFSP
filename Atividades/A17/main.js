@@ -90,7 +90,7 @@ button.addEventListener('click', () => {
         email.classList.remove("errorInput")
     }
 
-    if ((tel.value.lenght <= 13)) {
+    if ((tel.value.lenght == 13)) {
         tel.classList.add("errorInput")
     } else {
         tel.classList.remove("errorInput")
