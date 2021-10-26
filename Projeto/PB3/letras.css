@@ -187,8 +187,29 @@ footer {
         width: 75vw;
         height: 40vh;
     }    
+}
+
+@media only screen and (min-width: 300px) and (max-width: 510px) {
+
+.container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+input {
+    width: 40vw;
+    font-size: 0.6rem;
+}
+}
+
+@media only screen and (min-width: 511px) and (max-width: 700px) {
 
     .container {
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    input {
+        width: 40vw;
+        font-size: 0.8rem;
     }
 }

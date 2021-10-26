@@ -33,7 +33,9 @@
 
     <main>
         <h3 class="title"> Ordem Alfabética </h3>
-        <textarea name="texto" id="texto" placeholder=" Digite ou cole seu texto:"></textarea>
+        <div class="tooltip"><textarea name="texto" id="texto" placeholder=" Digite ou cole seu texto:"></textarea>
+            <span class="tooltiptext">Coloque espaços entre as palavras que deseja ordenar.</span>
+        </div>          
         <button class="card" onclick="ordenar()"><img src="./assets/ordem.svg"><p>Ordenar</p></button> 
         <p id="resultado"></p>  
 </main>

@@ -97,6 +97,46 @@ main  {
     flex-direction: column;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 20vw;
+    background-color: var(--pink);
+    font-family: Poppins;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 21rem;
+    left: 2rem;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--pink) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
 textarea {
     padding: 0.5rem;
     width: 60vw;
@@ -174,9 +214,37 @@ footer {
     background-color: var(--medium-pink);
 }
 
-@media only screen and (min-width: 300px) and (max-width: 620px) {
+@media only screen and (min-width: 300px) and (max-width: 542px) {
     textarea {
         width: 75vw;
         height: 40vh;
     }    
+    
+    .tooltip .tooltiptext {
+        bottom: 15rem;
+        font-size: 0.6rem;
+        left: 2rem;
+    }
+}
+
+@media only screen and (min-width: 543px) and (max-width: 620px) {
+    textarea {
+        width: 75vw;
+        height: 40vh;
+    }    
+    
+    .tooltip .tooltiptext {
+        bottom: 15rem;
+        font-size: 0.7rem;
+        left: 2rem;
+    }
+}
+
+
+@media only screen and (min-width: 621px) and (max-width: 1200px) {
+    .tooltip .tooltiptext {
+        bottom: 18rem;
+        font-size: 0.7rem;
+        left: 0.5rem;
+    }
 }
