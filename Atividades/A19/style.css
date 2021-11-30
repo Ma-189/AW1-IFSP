@@ -1,0 +1,82 @@
+/* RESET */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e3c1e9;
+}
+
+.v {
+    font-family: Poppins;
+    font-style: medium;
+    color: #08bd24;
+}
+
+.r{
+    font-family: Poppins;
+    font-style: medium;
+    color: #91449e;
+}
+
+h3 {
+    font-family: Poppins;
+    font-style: medium;
+    color: #91449e;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin: 5rem 0 1rem 0;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ #artist, #song {
+    padding: 0.7rem;
+    border: none;
+    margin: 2rem 2rem 2rem 0;
+    background-color: rgba(240, 238, 238, 1);
+    width: 15rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+}
+
+.input {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#buscar {
+    font-family: Poppins;
+    font-style: medium;
+    color: white;
+    background-color: #91449e;
+    width: 7rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+#lyrics {
+    display: flex;
+    justify-content: center;
+}
