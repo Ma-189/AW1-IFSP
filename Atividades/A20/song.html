@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSSong's</title>
+</head>
+
+<!--STYLES--> 
+<link rel = "stylesheet" href="song.css">
+
+<!--FONTS--> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+<body> 
+    <div class="title">
+        <h2 class="v">MS</h2><h2 class="r">Song's</h2>
+    </div>
+    <h3>Busque as letras das suas músicas favoritas com um só clique!</h3>
+
+    <form class="form"> 
+        <div class="artist">
+            <input type="text" id="artist" placeholder=" Nome do artista:">
+        </div>
+        <div class="song">
+            <input type="text" id="song" placeholder=" Nome da música:">
+        </div>
+    <button type="submit" id="buscar">BUSCAR</button>
+</form>
+
+<pre id="lyrics"></pre>
+
+</body>
+<script src="./song.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>
